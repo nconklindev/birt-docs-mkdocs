@@ -5,11 +5,16 @@ description: How to sort data in a custom report in BIRT Studio.
 
 ## About Sorting Data
 
-The data in a report can be sorted by any column and even multiple columns (up to 3). Read through this article for how to apply sorting to your report.
+The data in a report can be sorted by any column and even multiple columns (up to 3).
 
 ## Sorting on a Single Column
 
-To sort on a single ungrouped column, select the column and either right-click and select _Sort > Sort Ascending_ or _Sort Descending_, or hover over the sort icon in the column header and select either _Sort Ascending_ or _Sort Descending_.
+To sort on a single ungrouped column:
+
+1. Select the column.
+2. Right-click and select **Sort > Sort Ascending** or **Sort Descending**.
+
+Alternatively, hover over the sort icon in the column header and select **Sort Ascending** or **Sort Descending**.
 
 !!! info
 
@@ -18,7 +23,7 @@ To sort on a single ungrouped column, select the column and either right-click a
 
 ## Sorting on Multiple Columns
 
-A lot of times, you will want to sort on multiple columns. To sort on multiple columns, you need to either:
+Often, you will want to sort on multiple columns. To sort on multiple columns, you need to either:
 
 -   Have a single or multiple grouped columns and at least one ungrouped column and apply the sort using the method
     described in [Sorting on a Single Column](#sorting-on-a-single-column)
@@ -34,11 +39,15 @@ Grouped columns are treated separately from ungrouped columns. This means that i
 
 ### Advanced Sort
 
-An Advanced Sort allows you to sort on multiple columns, even if you have no grouped columns. To apply an Advanced Sort, right-click on a column and select _Sort > Advanced Sort_. This will open the Advanced Sort dialog.
+An Advanced Sort allows you to sort on multiple columns, even if you have no grouped columns.
 
 !!! info
 
-    The Advanced Sort dialog dropdown options will only show columns that are not grouped. If you have a grouped
+    The **Advanced Sort** dialog dropdown options will only show columns that are not grouped. If you have a grouped
     column, you will need to remove the grouping to sort on that column.
 
-Start by selecting a _Sort By_ column and either _Ascending_ or _Descending_ order. To add multiple sorts, select one or more _Then By_ sorts.
+To apply an Advanced Sort:
+
+1. Right-click on a column and select **Sort > Advanced Sort**. The **Advanced Sort** dialog opens.
+2. Select a _Sort By_ column and either _Ascending_ or _Descending_ order.
+3. To add multiple sorts, select one or more _Then By_ columns and their sort order.

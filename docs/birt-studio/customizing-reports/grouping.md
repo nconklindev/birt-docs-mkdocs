@@ -20,14 +20,17 @@ Upon creating a group, BIRT Studio performs the following:
 
 ## How to Create a Group
 
-Creating groups is straightforward to do in BIRT Studio. To create a group, select a column and click the group icon in the
-table toolbar. This will create a group with the selected column as the group key. You can also right-click on a column
-and select **Group > Add Group** from the context menu. Multiple groups can be created by performing the same steps on
-other columns.
+To create a group:
 
-To remove a group, select the column and click the **Delete Group** icon (it will look like and be in the same position
-on the table toolbar as the **Add Group** icon but will have an "X" in the bottom right corner of the icon). You can
-also right-click on the group header and select **Group > Delete Group** from the context menu.
+1. Select a column.
+2. Click the **Add Group** icon in the table toolbar, or right-click the column and select **Group > Add Group**.
+
+Repeat for any additional columns to group on.
+
+To remove a group:
+
+1. Select the grouped column.
+2. Click the **Delete Group** icon in the table toolbar (same position as **Add Group**, with an "X" in the bottom right corner), or right-click the group header and select **Group > Delete Group**.
 
 !!! warning
 
@@ -63,14 +66,16 @@ The values that are available for the time units are:
 
 ## Changing the Order of Groups
 
-Groups can be reordered by selecting the table or any column, right-clicking, then selecting **Column > Reorder Columns
-**. Groups can be reordered by clicking the up and down arrows in the _Grouped Columns_ section.
+To reorder groups:
+
+1. Select the table or any column, right-click, and select **Column > Reorder Columns**.
+2. In the _Grouped Columns_ section, use the up and down arrows to reorder.
 
 !!! info
 
     This window also allows you to reorder the columns in the table. This is useful if you want to change the order of
     the columns in the table but don't want to delete and re-add them. Reordering columns is also discussed in
-    [Sorting Data](./sorting.md).
+    [Editing and Formatting](./editing-and-formatting.md#changing-the-order-of-columns).
 
 ## Creating Sections
 
@@ -88,9 +93,10 @@ for an example of a group and a section.
     Report Library also use sections, but these are good examples of the types of data that work well with sections
     since these two reports were created by UKG.
 
-To create a section in an existing report, select the columns that you want to be added as a section by left-clicking on
-the first column and <kbd>Ctrl</kbd>-clicking on any other column. Right-click and select _Group > Add Section_. This
-will add the columns as sections.
+To create a section:
+
+1. Select the columns to add as a section by clicking the first column and <kbd>Ctrl</kbd>-clicking any others.
+2. Right-click and select **Group > Add Section**.
 
 !!! info
 
@@ -105,13 +111,16 @@ Hiding details is useful to create things like [summary tables](../advanced/summ
 
     Hiding details requires at least one group to be present before the option is visible.
 
-To hide details in a design that has a group applied, select the grouped column, then right-click to open the column
-context menu. Select **Group > Hide Detail**. Once that is selected, anything that is not in the grouped header row will
-be hidden.
+To hide details:
 
-### Unhiding/Show Details
+1. Select the grouped column.
+2. Right-click and select **Group > Hide Detail**.
 
-To unhide the previously hidden details rows, select the grouped column again, right-click to open the context menu, and
-select **Group > Show Detail**.
+### Showing Details
 
-If there are multiple groupings applied, then the details must be shown from the deepest group first.
+To show previously hidden details:
+
+1. Select the grouped column.
+2. Right-click and select **Group > Show Detail**.
+
+If there are multiple groupings applied, the details must be shown from the deepest group first.

@@ -19,7 +19,7 @@ When applying a filter to a column, there are numerous conditions to choose from
 | Equal to | Applies the filter that is equal to what is set | |
 | Greater than | Applies the filter that is greater than the specified value | |
 | Greater than or Equal | Applies the filter that is greater than or equal to the specified value | |
-| In | Applies the filter that is in the specified list | Enter values in the _Enter value(s)_ field and click _Add Value(s)_ when done |
+| In | Applies the filter that is in the specified list | Enter values in the _Enter value(s)_ field and click **Add Value(s)** when done |
 | Is Not Null | Applies the filter that is not null | |
 | Is Null | Applies the filter that is null | |
 | Less than | Applies the filter that is less than the specified value | |
@@ -28,7 +28,7 @@ When applying a filter to a column, there are numerous conditions to choose from
 | Match | Applies the filter that matches the value | |
 | Not Between | Applies the filter that is not between the specified values | Typically used with numerical data but can be used for dates and times as well |
 | Not Equal to | Applies the filter that is not equal to the specified value | |
-| Not In | Applies the filter that is not in the specified list | Enter values in the _Enter value(s)_ field and click _Add Value(s)_ when done |
+| Not In | Applies the filter that is not in the specified list | Enter values in the _Enter value(s)_ field and click **Add Value(s)** when done |
 | Not Like | Applies the filter that is not like the specified value | Use the wildcard character `%` |
 | Not Match | Applies the filter that does not match the specified value | |
 | Is False | Applies the filter for when the value is false | |
@@ -40,15 +40,15 @@ When applying a filter to a column, there are numerous conditions to choose from
 
 When applying any of the above conditions, there are three options to pick from:
 
--   Specify literal value
--   Use value from data field
--   Link to parameter
+-   _Specify literal value_
+-   _Use value from data field_
+-   _Link to parameter_
 
 The _Link to parameter_ option is covered in a different article. See [Custom Report Parameters](../advanced/custom-report-parameters.md) for more information.
 
-**Specify literal value** — This option allows you to specify a value that will be used in the filter. For example, if you want to filter the Pay Code column to only show the value of **REG**, you would select this option and then type **REG** in the text box.
+_Specify literal value_ — This option allows you to specify a value that will be used in the filter. For example, if you want to filter the Pay Code column to only show the value of `REG`, you would select this option and enter `REG` in the text box.
 
-**Use value from data field** — This option allows you to compare the data from each row with the value from a specified data field.
+_Use value from data field_ — This option allows you to compare the data from each row with the value from a specified data field.
 
 !!! warning
 
@@ -57,13 +57,19 @@ The _Link to parameter_ option is covered in a different article. See [Custom Re
 
 ## Adding Filters to a Report
 
-To add a filter to a report, start by clicking a column header to select it. You will know it is selected when the column has a dark blue border around the entire column. Once selected, the **Filter** icon will appear in the table toolbar above the report. Click it to begin adding a filter and open the **Filter** window.
+To add a filter to a report:
 
-Click the **Advanced Filter** link to be taken to the **Advanced Filter** window. This window allows you to apply multiple filters to a single column. See [Multiple Filters](#multiple-filters) for more information.
+1. Click a column header to select it. A dark blue border appears around the column when selected.
+2. Click the **Filter** icon in the table toolbar to open the **Filter** window.
+3. Click the **Advanced Filter** link to open the **Advanced Filter** window.
 
 ### Single Filter
 
-To add a single filter to the report, select your _Filter By_ column in the **Advanced Filter** window and your desired _Condition_ from above. If using _Specify literal value_, enter the condition into the _Default value_ field. If using _Use value from data field_, select the data field from the _Data field_ dropdown. Click the _Add Condition_ link to add the condition, then the _Add Filter_ link to add the filter to the report. Click **OK** when done making changes to add the filter.
+1. Select your _Filter By_ column and _Condition_.
+2. If using _Specify literal value_, enter the value in the _Default value_ field.
+3. If using _Use value from data field_, select the data field from the _Data field_ dropdown.
+4. Click **Add Condition**, then **Add Filter**.
+5. Click **OK** to save.
 
 !!! warning
 
@@ -81,11 +87,13 @@ To add a single filter to the report, select your _Filter By_ column in the **Ad
 
 ### Multiple Filters
 
-Multiple filters on one column can also be applied through one condition. To apply two or more filters as a condition, perform the steps to apply the first filter and click the _Add Condition_ link.
+Multiple filters on one column can also be applied through one condition.
 
-Before clicking _Add Filter_, select the same or another column from the _Filter By_ dropdown and select a _Condition_ from the dropdown. Enter the literal value or use values from data fields and click _Add Condition_.
-
-By default, the _Conditions_ text area will display the two conditions together, joined with an **AND**. This follows standard computer logic where _both_ conditions must be met for the filter to be applied. If you want to change the logic to an **OR**, click the **OR** button on the right side. Click _Add Filter_ and **OK** to finalize the changes.
+1. Follow the steps for a [Single Filter](#single-filter), but after clicking **Add Condition**, do not click **Add Filter** yet.
+2. Select the same or another column from the _Filter By_ dropdown and a _Condition_.
+3. Enter the literal value or select the data field, then click **Add Condition** again.
+4. By default, the _Conditions_ text area joins the two conditions with **AND**. To change the logic to **OR**, click the **OR** button.
+5. Click **Add Filter**, then **OK** to finalize.
 
 For example, using `1` as `true` and `0` as `false`:
 

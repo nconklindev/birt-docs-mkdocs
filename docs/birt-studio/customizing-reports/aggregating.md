@@ -11,15 +11,31 @@ In BIRT Studio, reports can be aggregated at the table and group level. For exam
 
 ## How To Aggregate Data
 
-To aggregate data in a report, first select the desired column that will be aggregated. In the table bar, click the **Aggregation (Σ)** icon. This will open the Aggregation Editor. Alternatively, you can right-click the column and select _Aggregation_.
+To open the **Aggregation** window:
 
-The following sections review terms discussed in the [User Interface](../introduction/user-interface.md) and [Terminology](../introduction/terminology.md) articles. If you are unfamiliar with these terms, please review those before continuing.
+1. Select the column to aggregate.
+2. Click the **Aggregation (Σ)** icon in the table toolbar.
+
+Alternatively, right-click the column and select **Aggregation**.
+
+!!! info
+
+    The following sections reference terms from the [User Interface](../introduction/user-interface.md) and
+    [Terminology](../introduction/terminology.md) articles. If you are unfamiliar with these terms, please review
+    those before continuing.
 
 ### Applying Aggregations by Group in Design View
 
 Aggregating by group assumes that you have an existing group to aggregate on. If you do not know how to create a group, please see the [Grouping Data](./grouping.md) article.
 
-To aggregate by group, while in design view and with the Aggregation Window open, check the _group_ option in the _Aggregate on_ section (enabled by default). Then select whether you want to place the aggregation in the header or footer of the group. Select a function to use for the aggregation in the _Select Function_ dropdown. An optional _Label_ can be entered that will prefix the aggregation. Click **OK** when done to save the aggregation.
+To aggregate by group in design view:
+
+1. Open the **Aggregation** window.
+2. Check the _group_ option in the _Aggregate on_ section (enabled by default).
+3. Select whether to place the aggregation in the _header_ or _footer_ of the group.
+4. Select a function from the _Select Function_ dropdown.
+5. Optionally, enter a _Label_ to prefix the aggregation value.
+6. Click **OK** to save.
 
 ### Applying Aggregations by Group in Preview View
 
@@ -32,19 +48,24 @@ Aggregating by group in preview view has additional options not present in desig
 -   Aggregations at the group level in preview view apply their own "aggregation row" in either the header or footer of the group. **This behavior cannot be changed**.
 -   Aggregations made in preview view cannot be removed from design view. They must be removed in preview view.
 
-To aggregate by group while in preview view, right-click on the column header and select _Aggregation_. Alternatively, with a column selected, you can click the three-dots menu and select _Aggregation_. Either will open the Aggregation Window, which will look slightly different than in design view.
+To aggregate by group in preview view:
 
-You'll notice that this window allows you to select the group level with a dropdown. The dropdown provides the column key of every group in the report.
-
-From this dropdown, select the group you want to aggregate on and whether you would like the aggregation to appear in the header or footer. As mentioned above, aggregations in preview view will add their own row to the report. If header is selected, the aggregation will appear just under the group header. If footer is selected, the aggregation will appear just before the next group header. An optional _Label_ can be entered. Click **OK** when done to save the aggregation.
+1. Right-click the column header and select **Aggregation**, or click the three-dots menu and select **Aggregation**. The **Aggregation** window opens.
+2. Select the group level from the dropdown. The dropdown lists the column key of every group in the report.
+3. Select whether to place the aggregation in the _header_ or _footer_.
+4. Optionally, enter a _Label_.
+5. Click **OK** to save.
 
 ### By Table
 
-Aggregating at the table level is the same in either design or preview view. From the aggregation window, check the _table level_ option (enabled by default). Click **OK** when done to save the aggregation.
+Aggregating at the table level is the same in either design or preview view.
+
+1. In the **Aggregation** window, check the _table level_ option (enabled by default).
+2. Click **OK** to save.
 
 ## Adding Multiple Aggregations
 
-To add multiple aggregations, click the _Add Aggregation_ link at the bottom of the Aggregation window. This will add another aggregation on the same selected column. You can add as many aggregations as you want. Each aggregation can be applied to a different group or the table. Each aggregation can also be placed in the header or footer of the group. If adding multiple aggregations with different functions, it may be a good idea to add a label to differentiate what each aggregation represents.
+To add multiple aggregations to the same column, click **Add Aggregation** at the bottom of the **Aggregation** window. Each aggregation can target a different group or the table level, and be placed in the header or footer. If adding multiple aggregations with different functions, add a _Label_ to each to differentiate them.
 
 !!! warning
 
@@ -54,4 +75,4 @@ To add multiple aggregations, click the _Add Aggregation_ link at the bottom of 
 
 ## Removing Aggregations
 
-If you need to remove an existing aggregation, open the Aggregation window and click the _Delete Aggregation_ link. This will remove that specific aggregation from the report. If multiple aggregations on the same column are applied, the others will not be removed.
+To remove an aggregation, open the **Aggregation** window and click **Delete Aggregation**. If multiple aggregations are applied to the same column, only the selected one is removed.
