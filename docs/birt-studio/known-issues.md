@@ -4,7 +4,8 @@ editUrl: false
 ---
 
 This is only meant to serve as the known issues with BIRT Studio and not as a comprehensive list of all issues. If you
-are experiencing an issue that is not listed here, please contact support.
+are experiencing an issue that is not listed here, please consider opening
+an [issue](https://github.com/nconklindev/birt-docs-mkdocs/issues/new) on GitHub.
 
 ## Computed Column Expression Does Not Update in the UI
 
@@ -21,7 +22,7 @@ layout. This issue is intermittent. Support has not been able to determine when 
 
 ## Custom Report Parameter Disappears After Creation
 
-When running a custom report that has a [custom report parameter](/docs/birt-studio/advanced/custom-report-parameters),
+When running a custom report that has a [custom report parameter](/docs/birt-studio/advanced/custom-report-parameters.md),
 the parameter may not appear in the Report Library when attempting to run the report. The Parameter toggles itself to
 invisible sometimes after creation. Navigate to Application Setup > Common Setup > Published Reports and edit your
 published report (not edit design). Select the custom report parameter and click "Edit" and select the "Visible" option.
