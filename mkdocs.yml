@@ -22,21 +22,17 @@ markdown_extensions:
 nav:
   - Home: index.md
   - "BIRT Studio":
-    - birt-studio/index.md
     - Introduction:
-      - birt-studio/introduction/index.md
       - Getting Started: birt-studio/introduction/getting-started.md
       - Terminology: birt-studio/introduction/terminology.md
       - User Interface: birt-studio/introduction/user-interface.md
     - Customizing Reports:
-      - birt-studio/customizing-reports/index.md
       - Editing and Formatting: birt-studio/customizing-reports/editing-and-formatting.md
       - Sorting: birt-studio/customizing-reports/sorting.md
       - Grouping: birt-studio/customizing-reports/grouping.md
       - Filtering: birt-studio/customizing-reports/filtering.md
       - Aggregating: birt-studio/customizing-reports/aggregating.md
     - Advanced:
-      - birt-studio/advanced/index.md
       - Computed Columns: birt-studio/advanced/computed-columns.md
       - Adding CSV Format: birt-studio/advanced/csv-reports.md
       - Summary Tables: birt-studio/advanced/summary-tables.md
@@ -46,7 +42,6 @@ nav:
       - Relative Time Period Reports: birt-studio/advanced/relative-time-period-reports.md
       - HCA Reports: birt-studio/advanced/hca-reports.md
     - Troubleshooting:
-      - birt-studio/troubleshooting/index.md
       - Using Splash: birt-studio/troubleshooting/using-splash.md
       - Report Failures and Performance: birt-studio/troubleshooting/report-failures-and-performance.md
       - CSV Format: birt-studio/troubleshooting/csv-format.md
@@ -55,7 +50,6 @@ nav:
     - FAQ: birt-studio/faq.md
     - Report Cookbook: birt-studio/report-cookbook.md
   - "Dataviews":
-      - dataviews/index.md
       - Personalizing Dataviews: dataviews/personalizing.md
 theme:
   name: material
@@ -78,10 +72,8 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - navigation.indexes
     - navigation.footer
     - navigation.instant
-    - navigation.sections
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
