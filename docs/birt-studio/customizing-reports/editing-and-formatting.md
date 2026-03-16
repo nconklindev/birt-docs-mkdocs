@@ -44,9 +44,9 @@ The dialog will look different depending on the data type. Each type provides a 
 
 Open the **Format Data** dialog and choose from:
 
-- mmm dd, yyyy (e.g. Jan 1, 2023)
-- MMM dd, yyyy (e.g. January 1, 2023)
-- mm/dd/yyyy (e.g. 01/01/2023)
+- `mmm dd, yyyy` (e.g. Jan 1, 2023)
+- `MMM dd, yyyy` (e.g. January 1, 2023)
+- `mm/dd/yyyy` (e.g. 01/01/2023)
 - Custom
 
 ### Formatting Date and Time
@@ -54,12 +54,12 @@ Open the **Format Data** dialog and choose from:
 Open the **Format Data** dialog and choose from:
 
 - Unformatted (default)
-- MMM dd, yyyy
-- mm dd, yyyy
-- mm/dd/yyyy
-- hh:mm:ss a Z (e.g. 12:00:00 PM UTC)
-- hh:mm:ss a (e.g. 12:00:00 PM)
-- HH:mm (e.g. 16:30)
+- `MMM dd, yyyy`
+- `mm dd, yyyy`
+- `mm/dd/yyyy`
+- `hh:mm:ss a Z` (e.g. 12:00:00 PM UTC)
+- `hh:mm:ss a` (e.g. 12:00:00 PM)
+- `HH:mm` (e.g. 16:30)
 
 The top option is equivalent to Unformatted since it matches the default display.
 
