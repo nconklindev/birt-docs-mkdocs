@@ -22,7 +22,7 @@ layout. This issue is intermittent. Support has not been able to determine when 
 
 ## Custom Report Parameter Disappears After Creation
 
-When running a custom report that has a [custom report parameter](/docs/birt-studio/advanced/custom-report-parameters.md),
+When running a custom report that has a [custom report parameter](./advanced/custom-report-parameters.md),
 the parameter may not appear in the Report Library when attempting to run the report. The Parameter toggles itself to
 invisible sometimes after creation. Navigate to Application Setup > Common Setup > Published Reports and edit your
 published report (not edit design). Select the custom report parameter and click "Edit" and select the "Visible" option.
