@@ -22,46 +22,42 @@ run in CSV format is a simple process that requires a few steps in and out of th
 
 ### Setting the Table Name
 
-The first thing that needs to be done to set up the report design for CSV format is to set a table name on the table
-that is going to be exported. Select the entire table by selecting a single column, then clicking the table bar above
-the column headers. The entire table will be selected when a blue border appears around it. Click the **Properties**
-icon to open the Table Properties. A drawer will open on the right side. Fill in the top text box labeled _Table Name_.
-Click **OK** when done.
-
 !!! warning
 
     If a report design contains multiple tables, only one can be used in CSV format.
 
+1. Select a single column in the table, then click the table bar above the column headers to select the entire table. A blue border will appear around the table when it is selected.
+2. Click the **Properties** icon to open the Table Properties. A drawer will open on the right side.
+3. Fill in the _Table Name_ field at the top of the drawer.
+4. Click **OK**.
+
 ### Setting the CSV_EXPORT_TABLE_NAME Parameter
 
-After the table is set, the next step is to set the `CSV_EXPORT_TABLE_NAME` parameter. To do this, click on **Data >
-Manage Parameters** and click the **Edit** icon next to the `CSV_EXPORT_TABLE_NAME` parameter. A window will appear in
-the middle of the screen. In the _Default Value_ text box, enter the table name that was set in the previous step. Click
-**OK** when done.
+1. Click **Data > Manage Parameters**.
+2. Click the **Edit** icon next to the `CSV_EXPORT_TABLE_NAME` parameter.
+3. In the _Default Value_ text box, enter the table name set in the previous step.
+4. Click **OK**.
 
 ### Setting the CSV_EXPORT_COLUMN_NAMES_ORDER Parameter
 
-To set the `CSV_EXPORT_COLUMN_NAMES_ORDER` parameter, you should take note of the column _binding_ names that are set in
-the Report Data Object. These are whatever value is in the _Label_ field for each column. The steps below assume all
-default label names. Click on **Data > Manage Parameters** and click the **Edit** icon next to the
-`CSV_EXPORT_COLUMN_NAMES_ORDER` parameter. A window will appear in the middle of the screen. In the _Default Value_ text
-box, enter the names of the column bindings in the order you'd like them to appear in the CSV report, separated by a
-semicolon. An example output may look like:
+Before setting this parameter, note the column binding names from your Report Data Object. These are the values in the _Label_ field for each column.
 
-```
-Employee Full Name;Employee ID;Actual Total Hours (Include Corrections);Actual Total Apply Date;Paycode Name
-```
+1. Click **Data > Manage Parameters**.
+2. Click the **Edit** icon next to the `CSV_EXPORT_COLUMN_NAMES_ORDER` parameter.
+3. In the _Default Value_ text box, enter the column binding names in the desired display order, separated by semicolons. For example:
 
-This is just an example, but your parameter should be formatted similarly when complete.
+    ```
+    Employee Full Name;Employee ID;Actual Total Hours (Include Corrections);Actual Total Apply Date;Paycode Name
+    ```
+
+4. Click **OK**.
 
 !!! info
 
     Computed columns can be used in the parameter as well, but make sure that you use the computed column's binding
     name and not the label name.
 
-When you are done editing the _Default Value_, click **OK**. After setting the two parameters described in the two
-previous steps, the report design is complete. If the report is unpublished, it can be published following the steps
-from the [Publishing a Report](../introduction/getting-started.md#publishing-a-report) section.
+After setting both parameters, the report design is complete. If the report is unpublished, publish it following the steps in the [Publishing a Report](../introduction/getting-started.md#publishing-a-report) section.
 
 !!! danger
 
@@ -72,11 +68,11 @@ from the [Publishing a Report](../introduction/getting-started.md#publishing-a-r
 
 ### Setting the Available Formats
 
-On the Report Options page (after clicking "Edit" on the Published Report), select CSV from the _Output formats_ list.
-This will check off the format and make it available when the report is run. If this is all you wanted to do and you do
-not want to change the default format, you can click **Save** and the report will be ready to run in CSV format.
+1. Click **Edit** on the Published Report to open the **Report Options** page.
+2. Select _CSV_ from the _Output formats_ list to enable it.
+3. Click **Save**.
 
 ### (Optional) Setting the Default Format
 
-To set the default format to CSV, select it from the _Default Output Type_ dropdown. Click **Save** to save your
-changes.
+1. From the _Default Output Type_ dropdown, select _CSV_.
+2. Click **Save**.

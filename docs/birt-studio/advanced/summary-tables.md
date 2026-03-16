@@ -9,11 +9,15 @@ Summary tables are built like any other table you'd add to a report. Most of the
 
 ## Creating a Summary Table
 
-At a basic level, creating a summary table involves three steps. You'll start by adding the columns you need to a new table. Then you'll group by the desired column you want summarized. For example, if you want to summarize the hours for all Paycodes, you would group by Paycode Name. Next, you need to create an aggregation on the column that you want to act as the metric. Finally, you hide the group details. Your data could end up looking like the below example.
+At a basic level, creating a summary table involves three steps: adding the columns you need, grouping by the column you want summarized, creating an aggregation on the metric column, and hiding the group details.
 
 ### Adding Columns
 
-To begin creating the summary table, you need to create a new table in the report design. To do this, click **Insert > Table > Table** from the menu bar. This will open the **Table Builder** window. In this window, select the columns you want and move them over by clicking the right **Add** arrow button. You can <kbd>Ctrl</kbd>+<kbd>Click</kbd> to select multiple columns at once. Once you have all the columns you want, click **OK** to add the table to the report design. If there is an existing table, the new table will be added above it.
+1. Click **Insert > Table > Table** from the menu bar. The **Table Builder** window opens.
+2. Select the columns you want and move them over by clicking the right **Add** arrow button. Use <kbd>Ctrl</kbd>+<kbd>Click</kbd> to select multiple columns at once.
+3. Click **OK** to add the table to the report design.
+
+If there is an existing table, the new table will be added above it.
 
 !!! info
 
@@ -25,19 +29,29 @@ For more information on adding columns to a report design, please see [Getting S
 
 ### Grouping
 
-After adding the columns for the new table, group by the column you want to summarize. For example, if you want to summarize the total hours for Paycodes, group by the _Paycode Name_ column. Select the column and click the **Add Group** icon.
+1. Select the column you want to summarize (e.g., _Paycode Name_).
+2. Click the **Add Group** icon.
 
 For more information on creating groups and grouping data, please see [Grouping](../customizing-reports/grouping.md).
 
 ### Aggregating
 
-Once the group is applied, apply aggregations on the columns you want to summarize. In our example, we want to summarize the total hours for each Paycode. To do this, add an aggregation on the _Hours_ column. Select the column and click the **Aggregation (Σ)** icon. This will open the **Aggregation Builder** window. Select the aggregation type you want to use — in our example, use _Sum_. Set it to aggregate on the _Group_ and in the _header_. Click **OK** to add the aggregation to the column.
+1. Select the column to aggregate (e.g., _Hours_).
+2. Click the **Aggregation (Σ)** icon. The **Aggregation Builder** window opens.
+3. Select the aggregation type you want to use (e.g., _Sum_).
+4. Set the aggregation to apply on the _Group_ and in the _header_.
+5. Click **OK**.
 
 For more information on creating aggregations, see the [Aggregating](../customizing-reports/aggregating.md) page.
 
 ### Hiding Details
 
-The final step in creating our summary table is to hide the details of the group. The "detail" rows are the rows that are in white (by default) and are not in the group header row. The only data we would have in our group header row at this point should be the Paycode Name and the aggregated hours. To hide the details, right-click on the grouped column and select **Group > Hide Details** from the context menu. This will hide the detail rows and only show the group header rows.
+The "detail" rows are the white rows (by default) that are not part of the group header. To hide them:
+
+1. Right-click on the grouped column.
+2. Select **Group > Hide Details** from the context menu.
+
+Only the group header rows will now be visible.
 
 Hiding Details is covered in the [Grouping](../customizing-reports/grouping.md#hiding-details) article.
 

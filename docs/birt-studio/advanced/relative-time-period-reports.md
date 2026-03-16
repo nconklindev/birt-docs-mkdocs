@@ -12,38 +12,35 @@ The Relative Time Period feature allows you to view and compare data across mult
 
 ## Creating the RDO
 
-Creating a Relative Time Period RDO starts the same way as any other. Navigate to **Application Setup > Common Setup > Report Data Object Management** to start. Click the **Add** button and select your desired type.
-
-On the **Create Report Data Objects** page, enter the following details:
-
--   _Report Data Object Key_
--   _Description_ (optional)
-
-For the _Timeframe_ option, select _Relative Time Period_. Selecting this option will display additional fields for configuration.
+1. Navigate to **Application Setup > Common Setup > Report Data Object Management**.
+2. Click **Add** and select your desired type.
+3. On the **Create Report Data Objects** page, enter the following:
+    -   _Report Data Object Key_
+    -   _Description_ (optional)
+4. For the _Timeframe_ option, select _Relative Time Period_. Additional configuration fields will appear.
 
 ## Configuring the RDO
 
-After selecting the _Relative Time Period_ option, the following fields will be displayed for configuration:
+After selecting _Relative Time Period_, two new fields appear:
 
 -   _Relative Time Period Start Date Reference_: The reference date relative to the start date of the selected timeframe.
 -   _Relative Time Period End Date Reference_: The reference date relative to the end date of the selected timeframe.
 
-The following options are available for both reference fields:
-
--   _Week to Date Reference_
--   _Number of Days Before Selected Date_
--   _Number of Days After Selected Date_
--   _Number of Weeks Before Selected Date_
--   _Number of Weeks After Selected Date_
-
-After selecting one of these options for the _Relative Time Period Start Date Reference_ and/or the _Relative Time Period End Date Reference_ fields, you can enter the number of days or weeks to reference.
-
-Once you have configured the RDO and added your desired columns, click **Save** to save the RDO.
+1. For _Relative Time Period Start Date Reference_, select one of the following options:
+    -   _Week to Date Reference_
+    -   _Number of Days Before Selected Date_
+    -   _Number of Days After Selected Date_
+    -   _Number of Weeks Before Selected Date_
+    -   _Number of Weeks After Selected Date_
+2. Optionally, configure _Relative Time Period End Date Reference_ using the same options.
+3. Enter the number of days or weeks to reference for each field you configured.
+4. Add your desired columns to the RDO.
+5. Click **Save**.
 
 ## Example
 
-Let's say you want to create a report that shows employee hours for the last 7 days. You would configure the RDO as follows:
+To create a report that shows employee hours for the last 7 days, configure the RDO as follows:
 
--   _Relative Time Period Start Date Reference_: Number of Days Before Selected Date = 7.
+-   _Relative Time Period Start Date Reference_: _Number of Days Before Selected Date_ = 7.
 
-You would leave the _Relative Time Period End Date Reference_ blank, as you want to show the data for the last 7 days and in this case do not need to constrain the end date.
+Leave _Relative Time Period End Date Reference_ blank, as no end date constraint is needed.

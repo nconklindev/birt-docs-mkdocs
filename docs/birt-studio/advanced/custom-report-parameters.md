@@ -20,8 +20,6 @@ A report parameter is simply a filter applied to a column with a specific condit
 
 ### Selecting the Column
 
-To get started creating your first parameter, edit the design of your report and select the column that you want to apply the parameter to, then click the **Filter** icon.
-
 !!! note
 
     In the examples provided, we're using the Paycode Name column, but you can select whichever column you'd like
@@ -32,13 +30,17 @@ To get started creating your first parameter, edit the design of your report and
     You cannot use Date or DateTime columns as parameters. This is because the built-in Timeframe parameter is a
     Date type parameter and adding another of this type or a similar type will cause conflicts or not work at all.
 
-![selecting filter column](../../../assets/images/selecting_filter_column.png)
+1. Open your report design.
+2. Select the column you want to apply the parameter to.
+3. Click the **Filter** icon.
+
+![selecting filter column](../../assets/images/selecting_filter_column.png)
 
 If your filter window does not look like this, click the **Advanced Filter** link in the top right of the dialog that appears.
 
 ### Selecting the Condition
 
-After you've selected your column and have the **Advanced Filter** window open, from the _Condition_ dropdown, select the condition you want.
+From the _Condition_ dropdown, select the condition you want.
 
 !!! info
 
@@ -50,66 +52,70 @@ After you've selected your column and have the **Advanced Filter** window open, 
 
 !!! note
 
-    Binary conditions such as "Is Not Null" or "Is Null" do not allow you to link to a parameter.
+    Binary conditions such as _Is Not Null_ or _Is Null_ do not allow you to link to a parameter.
 
-![selecting filter condition](../../../assets/images/selecting_filter_condition.png)
+![selecting filter condition](../../assets/images/selecting_filter_condition.png)
 
 ### Linking to the Parameter
 
-Once you have selected your condition, you should see a _Link to parameter_ radio button. Select it and then click **Create New Parameter**.
+1. Select the _Link to parameter_ radio button.
+2. Click **Create New Parameter**. The **Edit Parameter** window opens.
 
-![selecting link to parameter](../../../assets/images/selecting_link_to_parameter.png)
+![selecting link to parameter](../../assets/images/selecting_link_to_parameter.png)
 
-A new window will open called **Edit Parameter**.
-
-![edit parameter](../../../assets/images/edit_parameter.png)
+![edit parameter](../../assets/images/edit_parameter.png)
 
 !!! info
 
     Your window may look slightly different than this, depending on the condition you selected.
 
-The 5 inputs that are the same across all conditions are:
+3. Fill in the parameter fields. The 5 inputs that are the same across all conditions are:
 
--   _Parameter Name_ — Set a Parameter Name. This is the behind-the-scenes name used when the report is called. Keep the name in either **pascalCase** or **CamelCase**.
--   _Prompt Text_ — Set a descriptive name for your Parameter. This is the field that changes how the label above the HTML input appears.
--   _Help Text_ — This does not appear to be rendered. This can be set to the same as the Prompt Text.
--   _Is Required_ — When unchecked, the parameter becomes optional. Leave checked to require the user to provide a value before running.
--   _Display Type_ — Determines the type of HTML input that will be generated.
-    -   _Text Box_: Creates a simple text input field that allows for manual text entry.
-    -   _Text Box - Auto Suggest_: Creates a text input with auto-suggest functionality. Note: the auto-suggest functionality does not appear to work. Use _Text Box_ instead.
-    -   _Combo Box_: Creates a dropdown that allows selection of a single item from a predetermined list (configured in the parameter).
-    -   _List Box_: Selected with the _In_ and _Not In_ conditions. Creates a custom element that allows selecting multiple items at once.
-    -   _Radio Button_: Creates a list of radio buttons that can be selected at runtime based on the values that are entered.
--   _Default Value_ / _Enter Value(s)_ — This is where you will enter the filter value. _Default Value_ will display for all conditions except _In_ and _Not In_.
+    -   _Parameter Name_ — The behind-the-scenes name used when the report is called. Keep the name in either `pascalCase` or `CamelCase`.
+    -   _Prompt Text_ — A descriptive name for your Parameter. This changes how the label above the HTML input appears.
+    -   _Help Text_ — This does not appear to be rendered. This can be set to the same as the Prompt Text.
+    -   _Is Required_ — When unchecked, the parameter becomes optional. Leave checked to require the user to provide a value before running.
+    -   _Display Type_ — Determines the type of HTML input that will be generated.
+        -   _Text Box_: Creates a simple text input field that allows for manual text entry.
+        -   _Text Box - Auto Suggest_: Creates a text input with auto-suggest functionality. Note: the auto-suggest functionality does not appear to work. Use _Text Box_ instead.
+        -   _Combo Box_: Creates a dropdown that allows selection of a single item from a predetermined list (configured in the parameter).
+        -   _List Box_: Selected with the _In_ and _Not In_ conditions. Creates a custom element that allows selecting multiple items at once.
+        -   _Radio Button_: Creates a list of radio buttons that can be selected at runtime based on the values that are entered.
+    -   _Default Value_ / _Enter Value(s)_ — Where you enter the filter value. _Default Value_ displays for all conditions except _In_ and _Not In_.
 
-!!! info
+    !!! info
 
-    The Display Type is generally selected automatically depending on the condition selected.
+        The Display Type is generally selected automatically depending on the condition selected.
 
-!!! info
+    !!! info
 
-    Some Display Types appear to set their own Prompt Text that is not changed based on what is configured.
+        Some Display Types appear to set their own Prompt Text that is not changed based on what is configured.
 
-!!! warning
+    !!! warning
 
-    Using special characters in the Parameter Name is allowed but is not best practice. Stick to the suggestion
-    provided and use **pascalCase** or **CamelCase**.
+        Using special characters in the Parameter Name is allowed but is not best practice. Stick to the suggestion
+        provided and use `pascalCase` or `CamelCase`.
 
-!!! warning
+    !!! warning
 
-    Dynamic parameters are not supported with the current implementation of BIRT Studio. Selecting any checkbox or
-    radio button that changes the type from "Static" to "Dynamic" or makes the parameter a "Dynamic parameter" will
-    not work.
+        Dynamic parameters are not supported with the current implementation of BIRT Studio. Selecting any checkbox or
+        radio button that changes the type from "Static" to "Dynamic" or makes the parameter a "Dynamic parameter" will
+        not work.
 
-After entering the value(s), click **OK** to save the changes. If you are using the _In_ or _Not In_ conditions, be sure to click **Add Value(s)** before clicking **OK**.
+4. If you are using the _In_ or _Not In_ conditions, click **Add Value(s)** to add your values before proceeding.
+5. Click **OK** to save.
+
+![completed parameter](../../assets/images/completed_parameter.png)
 
 ## Add the Parameter as a Filter
 
-After the Parameter is linked and created, the **Advanced Filter** window should still be open. The dropdown that previously said **Create New Parameter** should now show the name of your Parameter.
+The **Advanced Filter** window should still be open. The dropdown that previously said **Create New Parameter** should now show the name of your Parameter.
 
-![custom parameter created](../../../assets/images/custom_parameter_created.png)
+![custom parameter created](../../assets/images/custom_parameter_created.png)
 
-Once this window is open and the Parameter is linked, click **Add Condition** followed by **Add Filter**, then click **OK** to save all changes.
+1. Click **Add Condition**.
+2. Click **Add Filter**.
+3. Click **OK** to save all changes.
 
 !!! warning
 
@@ -118,16 +124,25 @@ Once this window is open and the Parameter is linked, click **Add Condition** fo
 
 ## Viewing and Previewing the Results
 
-Once the filter is saved, the report design will refresh and the Save icon will be visible (if previous changes were already saved). From here, you are able to preview the report by clicking the **Preview** button, specifying the desired parameters, and clicking **OK**.
+Once the filter is saved, the report design will refresh and the **Save** icon will be visible (if previous changes were already saved).
 
-The report will run with the provided parameters in a new tab as if the report was being run from the Report Library in Interactive mode.
+1. Click the **Preview** button.
+2. Specify the desired parameters.
+3. Click **OK**.
+
+The report will run in a new tab as if being run from the Report Library in Interactive mode.
 
 ## Deleting a Parameter
 
 If you need to remove a custom parameter or want to start over:
 
-1. Delete the Filter by clicking the **Filter** icon, selecting the filter that corresponds to your Parameter, and clicking **Delete**. Then click **OK**.
-2. Delete the Parameter by navigating to **Data > Manage Parameters**, finding the Custom Parameter name, and clicking the **Delete** icon.
+1. Delete the filter:
+    1. Click the **Filter** icon.
+    2. Select the filter that corresponds to your Parameter.
+    3. Click **Delete**, then click **OK**.
+2. Delete the parameter:
+    1. Navigate to **Data > Manage Parameters**.
+    2. Find the Custom Parameter name and click the **Delete** icon.
 
 !!! info
 
@@ -144,61 +159,57 @@ All [filter conditions](../customizing-reports/filtering.md#filter-conditions) a
 
 ### Between
 
-Between requires setting two values instead of just one. This condition works well with:
+Between requires setting two values instead of just one. This condition works best with numeric data such as hours or wages.
 
--   Numeric data
+This condition uses a _Text Box_ Display Type by default. This can be changed to any other type except _List Box_. For example, to create a parameter that allows the user to specify a predefined amount, use _Combo Box_ or _Radio Button_. To allow the end-user to specify any value, use _Text Box_.
 
-When creating a parameter using this condition, keep this in mind and only create a parameter that links to a numerical piece of data such as hours or wages.
+Link the same parameter twice to have the same values listed at runtime for the upper and lower bounds.
 
-This condition will use a _Text Box_ Display Type by default when creating a parameter. This can be changed to any other type except _List Box_. For example, to create a parameter that allows the user to specify a predefined amount, use _Combo Box_ or _Radio Button_. To allow the end-user to specify any value, use _Text Box_.
-
-Link the same parameter twice to have the same values listed at runtime for the upper and lower values.
-
-![between](../../../assets/images/between.png)
+![between](../../assets/images/between.png)
 
 ### Like
 
-The Like condition is used to filter data based on a pattern. This condition works best with text data, but could work with numerical data as well.
+The _Like_ condition is used to filter data based on a pattern. This condition works best with text data, but could work with numerical data as well.
 
-When creating a parameter using this condition, it is a good idea to only create a parameter that links to a text-based piece of data such as pay code names, employee names, etc. This condition will work for numerical data if needed and no other condition fits the requirements, but _Like_ is not typically used for numerical data.
+When creating a parameter using this condition, it is a good idea to only link it to a text-based piece of data such as pay code names or employee names. _Like_ is not typically used for numerical data.
 
 ### Match
 
-The Match condition filters data using a regular expression pattern. This is an advanced condition best suited for users familiar with regular expressions.
+The _Match_ condition filters data using a regular expression pattern. This is an advanced condition best suited for users familiar with regular expressions.
 
 ### Top Percent/n & Bottom Percent/n
 
 The Top Percent/n and Bottom Percent/n conditions are only available with numerical data. When selecting one of these conditions, a new field called _Filter on_ appears, allowing the user to filter on the entire table or on a specified group.
 
-![top percent](../../../assets/images/top_percent.png)
+![top percent](../../assets/images/top_percent.png)
 
-This condition will use a _Text Box_ Display Type by default when creating a parameter. This can be changed to any other type except _List Box_. For example, to create a parameter that allows the user to specify a predefined percentage, use _Combo Box_ or _Radio Button_. To allow the end-user to specify any value, use _Text Box_.
+This condition uses a _Text Box_ Display Type by default. This can be changed to any other type except _List Box_. For example, to create a parameter that allows the user to specify a predefined percentage, use _Combo Box_ or _Radio Button_. To allow the end-user to specify any value, use _Text Box_.
 
 ## Appendix B: Reserved Parameter Names
 
 When you create a Parameter with a specific name, the application is designed to handle it a certain way. For example, creating a Paycode Parameter with the name `PaycodeType` exactly will create a Parameter that links to every single configured Paycode in the application. This includes both Regular and Combined Paycodes. The application will do this regardless of the values you enter into the _Enter value(s)_ field (when using the _In_ or _Not In_ condition). These are also called "Parameter Lists".
 
-The list of Parameter Lists can be found by clicking **Edit** on any Published Report, selecting a parameter, and clicking **Edit**. An **Edit Report Parameter** window will open that contains a table of the reserved Parameter names with the corresponding "Parameter List".
+To view the full list of reserved Parameter names, click **Edit** on any Published Report, select a parameter, and click the **Edit** icon next to it. The **Edit Report Parameter** window will open with a table of reserved Parameter names and their corresponding "Parameter List".
 
--   PaycodeType
--   PayCode
--   Exceptions
--   audittype
--   secrtyaudittype
--   peopleaudittype
--   att_events
--   att_combined_events
--   att_patterns
--   att_lost_time_events
--   att_actions
--   att_policies
--   att_other
--   ExceptionType
--   Paycodes
--   HourType
--   AbsenceType
--   Hours Summaries
--   supportusersecurityaudittype
+-   `PaycodeType`
+-   `PayCode`
+-   `Exceptions`
+-   `audittype`
+-   `secrtyaudittype`
+-   `peopleaudittype`
+-   `att_events`
+-   `att_combined_events`
+-   `att_patterns`
+-   `att_lost_time_events`
+-   `att_actions`
+-   `att_policies`
+-   `att_other`
+-   `ExceptionType`
+-   `Paycodes`
+-   `HourType`
+-   `AbsenceType`
+-   `Hours Summaries`
+-   `supportusersecurityaudittype`
 
 ## Appendix C: FAQ
 
@@ -208,7 +219,7 @@ Since there are many ways to create a custom parameter, this section covers some
 
 If this is happening to you, you most likely selected the _In_ or _Not In_ condition when you [selected your condition](#selecting-the-condition).
 
-In the **Edit Parameter** window, after adding your values and clicking **Add Value(s)**, only one value will be highlighted in the _Selected Values_ text area. This is the value that will appear when previewing the report. To see the other values, you can either <kbd>Ctrl</kbd>+<kbd>Click</kbd> the other values in _Selected Values_ to highlight multiple, then click **OK**, or run the report from the Report Library, which will return the correctly selected values at runtime.
+In the **Edit Parameter** window, after adding your values and clicking **Add Value(s)**, only one value will be highlighted in the _Selected Values_ text area. This is the value that will appear when previewing the report. To see the other values, either <kbd>Ctrl</kbd>+<kbd>Click</kbd> the other values in _Selected Values_ to highlight multiple and then click **OK**, or run the report from the Report Library, which will return all correctly selected values at runtime.
 
 ### Why is my custom report parameter not appearing when I run my report from the Report Library?
 

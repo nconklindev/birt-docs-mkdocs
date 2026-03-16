@@ -19,48 +19,47 @@ structure-based reports.
 
 ### Creating the Report Data Object
 
-Creating a Time Series RDO starts the same way as any other. Navigate to **Application Setup > Common Setup > Report
-Data Object Management** to start. Click the **Add** button and select your desired type, either _Employee - Time
-Series_ or _Business Structure - Time Series_.
-
 !!! warning
 
     Work Unit/HCA reports are beyond the scope of what is provided in this article. They are a little more
     complicated than an employee or business structure time series report. For more information on creating HCA
     reports, please see [Creating HCA Reports](./hca-reports.md).
 
-The only difference in the newly opened page compared to a standard RDO is that a Time Series RDO contains two
-additional dropdowns: _Time Increment_ and _Time Increment Format_. Both are required and default to _Calendar Day_
-and _Day of Week_.
+1. Navigate to **Application Setup > Common Setup > Report Data Object Management**.
+2. Click **Add** and select your desired type: _Employee - Time Series_ or _Business Structure - Time Series_.
+3. Set _Time Increment_ and _Time Increment Format_. Both are required and default to _Calendar Day_ and _Day of Week_.
 
-Each Time Increment has different available format options.
+    Each _Time Increment_ has different available format options:
 
-**Calendar Day**
+    **Calendar Day**
 
-- _Date_
-- _Day of Week_
-- _Day of Week + Date_ (e.g., Wednesday 12/04/2024)
+    - _Date_
+    - _Day of Week_
+    - _Day of Week + Date_ (e.g., Wednesday 12/04/2024)
 
-**Calendar Month**
+    **Calendar Month**
 
-- _Date Range_
-- _Month + Date Range_
-- _Month Name_
-- _Month Short Name_
+    - _Date Range_
+    - _Month + Date Range_
+    - _Month Name_
+    - _Month Short Name_
 
-**Calendar Quarter**
+    **Calendar Quarter**
 
-- _Date Range_
-- _Quarter Number_
-- _Quarter Number + Date Range_
-- _Quarter Short Number_
-- _Quarter Short Number + Date Range_
+    - _Date Range_
+    - _Quarter Number_
+    - _Quarter Number + Date Range_
+    - _Quarter Short Number_
+    - _Quarter Short Number + Date Range_
 
-**Calendar Week**
+    **Calendar Week**
 
-- _Date Range_
-- _Week Number_
-- _Week Number + Date Range_
+    - _Date Range_
+    - _Week Number_
+    - _Week Number + Date Range_
+
+4. Add your desired columns to the RDO and configure as needed.
+5. Click **Save**.
 
 ### Creating the Report
 
