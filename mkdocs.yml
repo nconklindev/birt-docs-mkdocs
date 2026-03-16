@@ -23,7 +23,6 @@ nav:
   - Home: index.md
   - "BIRT Studio":
     - birt-studio/index.md
-
     - Introduction:
       - birt-studio/introduction/index.md
       - Getting Started: birt-studio/introduction/getting-started.md
@@ -54,6 +53,10 @@ nav:
     - Best Practices: birt-studio/best-practices.md
     - "Known Issues": "birt-studio/known-issues.md"
     - FAQ: birt-studio/faq.md
+    - Report Cookbook: birt-studio/report-cookbook.md
+  - "Dataviews":
+      - dataviews/index.md
+      - Personalizing Dataviews: dataviews/personalizing.md
 theme:
   name: material
   icon:
