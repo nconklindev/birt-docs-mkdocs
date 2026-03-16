@@ -19,7 +19,7 @@ for you.
 ### Timeframe
 
 The timeframe can be set to something other than what is configured by choosing a new period from
-the <Calendar className="icon" /> Timeframe dropdown.
+the Timeframe dropdown.
 
 ### Hyperfind
 
@@ -34,7 +34,7 @@ column, click the <ChevronDown className="icon" /> down arrow in the column to h
 To apply a filter to any column, click the <Filter className="icon" /> filter icon and select "Show Filters Row". This
 will add two additional rows beneath each column header. The top dropdown will be the condition to be applied and the
 second row will be an input field for the value. Conditions can be found
-in [this](../birt-studio/customizing-reports/filtering#filter-conditions) article.
+in [this](../birt-studio/customizing-reports/filtering.md#filter-conditions) article.
 
 ## Not Seeing Something?
 
