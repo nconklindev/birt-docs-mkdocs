@@ -41,7 +41,7 @@ The functions in BIRT Studio are separated into the following categories in the 
 - [Comparison](#comparison)
 - [Text](#text)
 - [Math](#math)
-- [Date & Time](#date--time)
+- [Date & Time](#date-time)
 
 ### Comparison
 
