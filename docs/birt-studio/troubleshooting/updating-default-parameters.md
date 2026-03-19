@@ -23,9 +23,9 @@ BIRT Studio comes with a set of default parameters that can be changed. These pa
 
 !!! danger
 
-    Out of the three parameters, only the `HyperFindSelector_Id` parameter should be changed. Changing `TimeFrame_startDate` or `TimeFrame_endDate` may cause report errors.
+    Out of the three parameters, only the `HyperFindSelector_Id` parameter should be changed. Changing `TimeFrame_startDate` or `TimeFrame_endDate` may cause report errors. Change them at your own risk.
 
-## Changing the Default Parameters
+## Changing the Default Hyperfind Parameter
 
 !!! warning
 
