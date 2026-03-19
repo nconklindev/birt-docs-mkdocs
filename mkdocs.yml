@@ -45,6 +45,7 @@ nav:
       - Using Splash: birt-studio/troubleshooting/using-splash.md
       - Report Failures and Performance: birt-studio/troubleshooting/report-failures-and-performance.md
       - CSV Format: birt-studio/troubleshooting/csv-format.md
+      - Changing the Default Hyperfind Parameter: birt-studio/troubleshooting/updating-default-parameters.md
     - Best Practices: birt-studio/best-practices.md
     - "Known Issues": "birt-studio/known-issues.md"
     - FAQ: birt-studio/faq.md
